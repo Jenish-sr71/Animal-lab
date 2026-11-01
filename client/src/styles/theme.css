@@ -1,0 +1,44 @@
+:root {
+  --text-main: #2C3E50;
+  --text-muted: #596A7A;
+  --bg-main: #F9F9FB;
+  --bg-card: #FFFFFF;
+  --accent: #2E8B57; /* Subtle forest green */
+  --border: #E1E4E8;
+  
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Clean minimal box for cards and panels */
+.encyclopedia-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.encyclopedia-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}

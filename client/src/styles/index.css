@@ -1,0 +1,28 @@
+:root {
+  --bg-main: #0c0c0e;
+  --bg-card: #18181b;
+  --text-main: #d4c8b8;
+  --text-muted: #8a8275;
+  --accent: #6b21a8; 
+  --border: #2a2824;
+  --radius: 4px;
+  --shadow: 0 6px 24px rgba(0,0,0,0.7);
+  --font-heading: 'Georgia', serif;
+  --font-main: 'Georgia', serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}
+
+/* Reusable encyclopedia box style used across your pages */
+.encyclopedia-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
